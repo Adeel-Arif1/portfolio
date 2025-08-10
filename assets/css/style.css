@@ -832,7 +832,7 @@ main {
 .modal-close-btn {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 10px;
   background: var(--onyx);
   border-radius: 8px;
   width: 32px;
@@ -991,22 +991,24 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-3: 14px;
     --fs-4: 14px;
     --fs-5: 13px;
-    --fs-6: 12px;
-    --fs-7: 11px;
+    --fs-6: 13px;
+    --fs-7: 12px;
     --fs-8: 10px;
   }
 
   main {
-    margin: 10px 8px;
+    margin: 15px 10px;
     margin-bottom: 60px;
+    overflow-y: auto;
   }
 
   .sidebar {
-    padding: 10px;
-    max-height: 130px;
+    padding: 15px;
+    max-height: 150px;
+    overflow-y: auto;
   }
 
-  .sidebar.active { max-height: 390px; }
+  .sidebar.active { max-height: 410px; }
 
   .sidebar-info {
     flex-direction: column;
@@ -1043,7 +1045,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .info_more-btn {
     top: -10px;
     right: -10px;
-    padding: 8px;
+    padding: 10px;
   }
 
   .navbar {
@@ -1057,14 +1059,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link {
     font-size: var(--fs-8);
-    padding: 15px 5px;
+    padding: 20px 10px;
   }
 
   .article-title { margin-bottom: 20px; }
 
   .about-text {
     font-size: var(--fs-6);
-    line-height: 1.5;
+    line-height: 1.7;
+    margin-bottom: 15px;
   }
 
   .service-item {
@@ -1089,6 +1092,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img {
     aspect-ratio: 4 / 3;
+    max-width: 100%;
+    margin-bottom: 10px;
   }
 
   .project-title {
@@ -1098,11 +1103,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-description {
     font-size: var(--fs-6);
+    line-height: 1.7;
     margin: 0 10px 10px;
   }
 
   .mapbox {
-    height: 150px;
+    height: 120px;
     margin-bottom: 15px;
   }
 
@@ -1114,6 +1120,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-input {
     padding: 8px 12px;
     font-size: var(--fs-6);
+    line-height: 1.5;
   }
 
   textarea.form-input {
@@ -1123,7 +1130,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .form-btn {
-    padding: 8px 12px;
+    padding: 10px 15px;
     font-size: var(--fs-6);
   }
 }
